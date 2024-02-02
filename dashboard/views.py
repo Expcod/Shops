@@ -69,10 +69,10 @@ def product_update(request, id):
     return redirect('product_detail', product.id)
 
 
-def product_delete(request, id):
-    product = models.Product.objects.get(id=id)
-    product.delete()
-    return redirect('product_detail',product.id)
+# def product_delete(request, id):
+#     product = models.Product.objects.get(id=id)
+#     product.delete()
+#     return redirect('product_detail',product.id)
 
 
 def product_create(request):
