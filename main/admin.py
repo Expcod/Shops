@@ -1,9 +1,10 @@
 from django.contrib import admin
-from . import models
+from .models import *
 
-
-admin.site.register(models.Category)
-admin.site.register(models.Product)
-admin.site.register(models.ProductImage)
-admin.site.register(models.Cart)
-admin.site.register(models.CartProduct)
+admin.site.register(Category)
+admin.site.register(Product)
+admin.site.register(ProductImage)
+admin.site.register(ProductReview)
+admin.site.register(Cart)
+admin.site.register(CartProduct)
+admin.site.register(Wishlist)
